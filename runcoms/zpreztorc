@@ -46,7 +46,8 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'fzf' \
   'alias-tips' \
-  'ssh'
+  'ssh' \
+  'rust'
 
 #
 # Autosuggestions
