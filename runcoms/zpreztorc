@@ -47,7 +47,9 @@ zstyle ':prezto:load' pmodule \
   'fzf' \
   'alias-tips' \
   'ssh' \
-  'rust'
+  'rust' \
+  'pacman' \
+  'direnv'
 
 #
 # Autosuggestions
