@@ -11,3 +11,22 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+LOCAL_PYBIN=$HOME/.local/bin
+LOCAL_BIN=$HOME/bin
+
+# export  PATH
+export PATH=$LOCAL_BIN:$LOCAL_PYBIN:$PATH
+
+# export others
+export KEYTIMEOUT=1
+
+# Aliases
+
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias nr="npm run"
+
+export FZF_DEFAULT_OPTS='--color=bg+:#302D41,bg:#1E1E2E,spinner:#F8BD96,hl:#F28FAD --color=fg:#D9E0EE,header:#F28FAD,info:#DDB6F2,pointer:#F8BD96 --color=marker:#F8BD96,fg+:#F2CDCD,prompt:#DDB6F2,hl+:#F28FAD'
+
+eval "$(nodenv init -)"
+eval "$(rbenv init - zsh)"

@@ -36,6 +36,13 @@ if [[ -z "$LANG" ]]; then
 fi
 
 #
+# Environment variables
+#
+
+export KEYTIMEOUT=1
+export ANDROID_HOME=$HOME/Library/Android/sdk
+
+#
 # Paths
 #
 
@@ -52,6 +59,11 @@ path=(
   $HOME/{,s}bin(N)
   /opt/{homebrew,local}/{,s}bin(N)
   /usr/local/{,s}bin(N)
+  $HOME/.local/bin
+  $ANDROID_HOME/emulator
+  $ANDROID_HOME/cmdline-tools/latest
+  $ANDROID_HOME/cmdline-tools/latest/bin
+  $ANDROID_HOME/platform-tools
   $path
 )
 
@@ -71,3 +83,23 @@ fi
 if [[ -z "$LESSOPEN" ]] && (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
+
+#
+# Aliases
+#
+
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias nr="npm run"
+
+#
+# Homebrew
+#
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+#
+# Pyenv
+#
+
+eval "$(pyenv init --path)"
+
