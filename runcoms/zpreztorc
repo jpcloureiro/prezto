@@ -48,7 +48,7 @@ zstyle ':prezto:load' pmodule \
   'ssh' \
   'rust' \
   'pacman' \
-  'direnv'
+  'direnv' \
   'clipboard' \
   'nvim-appname' \
   'alias-tips'
