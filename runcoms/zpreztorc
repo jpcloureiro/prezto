@@ -16,7 +16,7 @@
 zstyle ':prezto:*:*' color 'yes'
 
 # Add additional directories to load prezto modules from
-zstyle ':prezto:load' pmodule-dirs $HOME/.zprezto/usermodules
+zstyle ':prezto:load' pmodule-dirs $ZDOTDIR/.zprezto/usermodules
 
 # Allow module overrides when pmodule-dirs causes module name collisions
 # zstyle ':prezto:load' pmodule-allow-overrides 'yes'

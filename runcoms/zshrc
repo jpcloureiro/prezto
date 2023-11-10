@@ -31,3 +31,6 @@ export FZF_DEFAULT_OPTS='--color=bg+:#302D41,bg:#1E1E2E,spinner:#F8BD96,hl:#F28F
 
 eval "$(nodenv init -)"
 eval "$(rbenv init - zsh)"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
