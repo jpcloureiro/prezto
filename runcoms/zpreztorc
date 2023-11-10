@@ -43,6 +43,8 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'autosuggestions' \
   'node' \
+  'python' \
+  'ruby' \
   'git' \
   'fzf' \
   'ssh' \
